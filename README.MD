@@ -1,26 +1,26 @@
 # Compose Multiplatform Application
+[![](https://jitpack.io/v/KhubaibKhan4/NativeNotifier-KMP.svg)](https://jitpack.io/#KhubaibKhan4/NativeNotifier-KMP)
+Native Notifier is a Native Notification Library that is build to help the Kotlin Multiplatform Developers to Show Platform Native Local Notifications on Android, iOS, Web and Desktop. It's a pre-release. Soon, updating this with extra features.
 
-## Before running!
- - check your system with [KDoctor](https://github.com/Kotlin/kdoctor)
- - install JDK 17 on your machine
- - add `local.properties` file to the project root and set a path to Android SDK there
+## How to
+To get a Git project into your build:
 
-### Android
-To run the application on android device/emulator:  
- - open project in Android Studio and run imported android run configuration
+## Step 1. Add the JitPack repository to your build file
 
-To build the application bundle:
- - run `./gradlew :composeApp:assembleDebug`
- - find `.apk` file in `composeApp/build/outputs/apk/debug/composeApp-debug.apk`
+Add it in your root build.gradle at the end of repositories:
 
-### Desktop
-Run the desktop application: `./gradlew :composeApp:run`
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
 
-### iOS
-To run the application on iPhone device/simulator:
- - Open `iosApp/iosApp.xcproject` in Xcode and run standard configuration
- - Or use [Kotlin Multiplatform Mobile plugin](https://plugins.jetbrains.com/plugin/14936-kotlin-multiplatform-mobile) for Android Studio
 
-### Browser
-Run the browser application: `./gradlew :composeApp:jsBrowserDevelopmentRun`
+## Step 2. Add the dependency
 
+	dependencies {
+	        implementation 'com.github.KhubaibKhan4:NativeNotifier-KMP:Tag'
+	}
+Share this release:
