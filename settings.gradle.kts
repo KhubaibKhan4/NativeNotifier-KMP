@@ -15,3 +15,4 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+include(":nativenotifier")
